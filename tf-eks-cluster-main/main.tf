@@ -18,7 +18,7 @@ module "networking" {
 module "eks" {
   source = "./modules/eks"
 
-  cluster_name       = "my-eks-cluster"
+  cluster_name       = "luan-eks-cluster"
   subnet_ids         = concat(module.networking.private_subnet_ids, module.networking.public_subnet_ids)
   security_group_id  = module.networking.eks_security_group_id
   kubernetes_version = "1.27"

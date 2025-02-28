@@ -4,7 +4,7 @@ variable "vpc_cidr_block" {
 }
 variable "vpc_name" {
   type    = string
-  default = "le-vpc-25dec-01"
+  default = "luan-vpc-eks-test"
 }
 
 variable "tag" {
